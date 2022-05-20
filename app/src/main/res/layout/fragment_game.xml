@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0288D1"
+    android:visibility="visible"
+    tools:context=".GameFragment">
+
+    <com.usk.skydiver.GameSurfaceView
+        android:id="@+id/gameObjectView"
+        android:layout_width="match_parent"
+        android:layout_height="668dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pauseOrEndContainer"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/pauseOrEndContainer"
+        android:layout_width="match_parent"
+        android:layout_height="669dp"
+        android:layout_marginBottom="1dp"
+        android:layout_weight="1"
+        android:alpha="0.8"
+        android:background="#000000"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startPauseButton" />
+
+    <Button
+        android:id="@+id/startPauseButton"
+        android:layout_width="77dp"
+        android:layout_height="48dp"
+        android:background="@drawable/pause_icon"
+        app:backgroundTint="#03A9F4"
+        app:backgroundTintMode="add"
+        app:layout_constraintBottom_toTopOf="@+id/pauseOrEndContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/quitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="376dp"
+        android:layout_marginEnd="92dp"
+        android:text="Quit"
+        android:visibility="invisible"
+        app:backgroundTint="#03A9F4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toEndOf="@+id/restartButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/restartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="376dp"
+        android:text="Restart"
+        android:visibility="invisible"
+        app:backgroundTint="#03A9F4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

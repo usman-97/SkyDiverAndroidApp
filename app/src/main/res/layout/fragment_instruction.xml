@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3E5FC"
+    tools:context=".InstructionFragment">
+
+    <TextView
+        android:id="@+id/mainInstructionHeading"
+        android:layout_width="349dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="98dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/newtonFirstLaw"
+        android:layout_width="334dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginEnd="116dp"
+        android:background="#0288D1"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newtonFirstLawImage" />
+
+    <ImageView
+        android:id="@+id/newtonFirstLawImage"
+        android:layout_width="174dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="167dp"
+        android:src="@drawable/newton_first_law"
+        app:layout_constraintBottom_toTopOf="@+id/newtonFirstLaw"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainInstructionHeading" />
+
+    <ImageView
+        android:id="@+id/newtonSecondLawImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/newton_second_law_a"
+        app:layout_constraintBottom_toTopOf="@+id/newtonSecondLaw"
+        app:layout_constraintEnd_toStartOf="@+id/newtonThirdLawImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newtonFirstLaw" />
+
+    <TextView
+        android:id="@+id/newtonSecondLaw"
+        android:layout_width="182dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="251dp"
+        android:background="#0288D1"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/newtonThirdLaw"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newtonSecondLawImage" />
+
+    <ImageView
+        android:id="@+id/newtonThirdLawImage"
+        android:layout_width="wrap_content"
+        android:layout_height="79dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/newton_third_law"
+        app:layout_constraintBottom_toTopOf="@+id/newtonThirdLaw"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/newtonSecondLawImage"
+        app:layout_constraintTop_toBottomOf="@+id/newtonFirstLaw" />
+
+    <TextView
+        android:id="@+id/newtonThirdLaw"
+        android:layout_width="184dp"
+        android:layout_height="151dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:background="#0288D1"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/newtonSecondLaw"
+        app:layout_constraintTop_toBottomOf="@+id/newtonThirdLawImage" />
+
+    <Button
+        android:id="@+id/startGameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="306dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="27dp"
+        android:text="Start"
+        app:backgroundTint="#0288D1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newtonThirdLaw" />
+</androidx.constraintlayout.widget.ConstraintLayout>

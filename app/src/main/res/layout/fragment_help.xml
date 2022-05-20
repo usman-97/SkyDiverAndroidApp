@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0288D1"
+    tools:context=".HelpFragment" >
+
+    <ImageView
+        android:id="@+id/playerControlImage"
+        android:layout_width="159dp"
+        android:layout_height="179dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/phone_control"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/playerControls"
+        android:layout_width="176dp"
+        android:layout_height="166dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="35dp"
+        android:background="#B3E5FC"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:text="TextView"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/playerControlImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/playerControlValues"
+        android:layout_width="354dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="25dp"
+        android:background="#B3E5FC"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:text="TextView"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/gameObject2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playerControls"
+        app:layout_constraintVertical_bias="0.391" />
+
+    <TextView
+        android:id="@+id/inGameObjects"
+        android:layout_width="187dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="10dp"
+        android:background="#B3E5FC"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:text="TextView"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/gameObject2"
+        app:layout_constraintTop_toBottomOf="@+id/playerControlValues" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="359dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="17dp"
+        android:src="@drawable/control_values"
+        app:layout_constraintBottom_toTopOf="@+id/playerControlValues"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playerControlImage"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/backToHomeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="309dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/arrow_back"
+        app:backgroundTint="#B3E5FC"
+        app:backgroundTintMode="add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/gameObject1"
+        android:layout_width="104dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="57dp"
+        android:src="@drawable/helicopter_l"
+        app:layout_constraintBottom_toTopOf="@+id/backToHomeButton"
+        app:layout_constraintEnd_toStartOf="@+id/inGameObjects"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playerControlValues" />
+
+    <ImageView
+        android:id="@+id/gameObject2"
+        android:layout_width="75dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/rocket"
+        app:layout_constraintStart_toEndOf="@+id/inGameObjects"
+        app:layout_constraintTop_toBottomOf="@+id/playerControlValues" />
+</androidx.constraintlayout.widget.ConstraintLayout>

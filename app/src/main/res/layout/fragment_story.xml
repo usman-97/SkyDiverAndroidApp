@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3E5FC"
+    tools:context=".StoryFragment">
+
+    <ImageView
+        android:id="@+id/storyPlane"
+        android:layout_width="302dp"
+        android:layout_height="132dp"
+        android:layout_marginEnd="109dp"
+        android:src="@drawable/aeroplane"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/storyHelicopter"
+        android:layout_width="127dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="116dp"
+        android:src="@drawable/helicopter_r"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/storySkyDiver"
+        android:layout_width="358dp"
+        android:layout_height="317dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/skydiver_story"
+        app:layout_constraintBottom_toTopOf="@+id/story"
+        app:layout_constraintEnd_toStartOf="@+id/storyHelicopter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/storyPlane" />
+
+    <TextView
+        android:id="@+id/story"
+        android:layout_width="380dp"
+        android:layout_height="194dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="56dp"
+        android:background="#0288D1"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:text="TextView"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/nextButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.352"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="4dp"
+        android:text="Next"
+        app:backgroundTint="#0288D1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/skipButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/skipButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="4dp"
+        android:text="Skip"
+        app:backgroundTint="#0288D1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nextButton" />
+
+    <ImageView
+        android:id="@+id/storyCloud"
+        android:layout_width="115dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/cloud"
+        app:layout_constraintEnd_toStartOf="@+id/storySkyDiver"
+        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/storyPlane" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

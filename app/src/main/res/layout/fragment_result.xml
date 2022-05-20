@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#03A9F4"
+    tools:context=".ResultFragment">
+
+    <TextView
+        android:id="@+id/winningText"
+        android:layout_width="384dp"
+        android:layout_height="145dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/distanceText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/distanceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="0/0"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/secondStar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/winningText" />
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="150dp"
+        android:layout_height="93dp"
+        android:background="@drawable/home_icon"
+        android:hapticFeedbackEnabled="true"
+        app:backgroundTint="#80D8FF"
+        app:backgroundTintMode="screen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondStar"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/firstStar"
+        android:layout_width="112dp"
+        android:layout_height="83dp"
+        android:src="@drawable/outlined_star"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/secondStar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/winningText" />
+
+    <ImageView
+        android:id="@+id/secondStar"
+        android:layout_width="112dp"
+        android:layout_height="83dp"
+        android:src="@drawable/outlined_star"
+        app:layout_constraintBottom_toTopOf="@+id/homeButton"
+        app:layout_constraintEnd_toStartOf="@+id/thirdStar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/firstStar"
+        app:layout_constraintTop_toBottomOf="@+id/distanceText" />
+
+    <ImageView
+        android:id="@+id/thirdStar"
+        android:layout_width="112dp"
+        android:layout_height="83dp"
+        android:src="@drawable/outlined_star"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/secondStar"
+        app:layout_constraintTop_toBottomOf="@+id/winningText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
